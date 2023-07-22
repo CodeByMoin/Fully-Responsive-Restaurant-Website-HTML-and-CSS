@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavourPalate.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="FirstPage">
+
+        <div class="nav1">
+            <a href="index.html"><img src="logo..png" alt="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            </div>
+
+        <section class="nav2">
+            <div>
+                <a href="index.html"><img src="logo..png" alt="logo"></a>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          </section>
+
+        <div class="homepage">
+            <h1>Welcome to FlavourPalate</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores beatae, cum necessitatibus error tenetur aspernatur reiciendis eaque enim repellendus obcaecati<br> sint rem, exercitationem iusto rerum corporis vitae adipisci perspiciatis tempora, eveniet veniam. Non, quibusdam.</p>
+            <a href="#"><h3>Visit Us Now!</h3></a>
+        </div>
+
+    </section>
+    
+    <section class="SecondPage">
+
+        <h2 id="ourservices">Our Services</h2>
+
+        <div class="services">
+
+        <div class="card">
+            <div class="front">
+              <img src="burger.jpg" alt="FastFood">
+            </div>
+            <div class="back">
+                <h3 id="fastfood">Fast Food</h3>
+                <hr>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deleniti ullam omnis.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="front">
+              <img src="Gourmet.jpg" alt="GourmetFood">
+            </div>
+            <div class="back">
+                <h3 id="gourmetfood">Gourmet Food</h3>
+                <hr>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deleniti ullam omnis.</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="front">
+              <img src="salad.jpg" alt="VeganFood">
+            </div>
+            <div class="back">
+                <h3 id="veganfood">Vegan Food</h3>
+                <hr>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deleniti ullam omnis.</p>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="ThirdPage">
+
+        <h2 id="onlinepartners">Online Partners</h2>
+
+        <div id="logo-scroller" class="scrolling-images">
+            <img class="animated" src="swiggylogo.png" alt="Swiggy">
+            <img class="animated" src="zomatologo.png" alt="zomato">
+            <img class="animated" src="ubereatslogo.png" alt="UberEats">
+            <img class="animated" src="foodpandalogo.png" alt="FoodPanda">
+            <img class="animated" src="eatsurelogo.png" alt="EatSure">
+            <img class="animated" src="postmateslogo.png"alt="PostMates">
+          </div>
+        </section>
+
+        <section class="FourthPage">
+            <div class="container">
+                <div class="contentLeft">
+                  <div class="row">
+                      <div class="imgWrapper">
+                          <img src="about-us1.jpg" alt="">
+                      </div>
+                      <div class="imgWrapper">
+                          <img src="about-us2.jpg" alt="">
+                      </div>
+                      <div class="imgWrapper">
+                          <img src="about-us3.jpg" alt="">
+                      </div>
+                      <div class="imgWrapper">
+                          <img src="about-us4.jpg" alt="">
+                      </div>
+                  </div>
+                </div>
+                <div class="contentRight">
+                  <div class="content">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, animi facilis? Inventore quaerat doloremque ducimus amet quidem dolore? Nisi sequi impedit ea. Magnam quos aliquam ducimus laudantium. Eligendi, illum fugit.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <script>
+
+            function setTimings(scroller) {
+            const DURATION = 2;
+            let imgs = scroller.children;
+            for(let i = 0; i < imgs.length; i++) {
+            imgs[i].style.animationDelay = (DURATION * i).toString() + "s";
+            imgs[i].style.animationDuration = (DURATION * imgs.length).toString() + "s";
+            }
+            }
+            setTimings(document.getElementById("logo-scroller"));
+
+        </script>
+
+</body>
+</html>
